@@ -1,5 +1,35 @@
 ---
+import { Image } from 'astro:assets';
 ---
 <footer>
     
+    
+    <a href="/">
+        <Image
+        src="/discord.png"
+        alt="man in front of a computer"
+        width="30"
+        height="30"
+    />
+    </a>
+    <a href="">
+        <Image
+        src="/correo.png"
+        alt="man in front of a computer"
+        width="30"
+        height="30"
+    />
+    </a> 
+    
+    
 </footer>
+
+<style>
+    footer {
+        display: flex;
+        justify-content: center;  
+        align-items: center;           
+        padding: 50px;
+        gap: 20px;
+    }
+</style>
