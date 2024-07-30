@@ -7,28 +7,36 @@ import Layout from "../layouts/Layout.astro";
         <body>
             <section class="hablanos">
                 <h1>Ponte en contacto!</h1>
-                <p>¿Tienes alguna pregunta, sugerencia o simplemente quieres decirnos lo que piensas? ¡Tu opinión es importante para nosotros! Escríbenos y estaremos encantados de atenderte.</p>
-            
-                <form action="" class="form">
-                <input type="text" placeholder="Name" class="form__input" id="name" />
-                <label for="name" class="form__label">Name</label>
-                <input
-                type="email"
-                placeholder="Email"
-                class="form__input"
-                id="email"
-                />
-                <label for="email" class="form__label">Email</label>
+                <p>¿Tienes alguna pregunta, sugerencia o simplemente quieres decirnos lo que piensas? ¡Tu opinión es importante para nosotros! Escríbenos y estaremos encantados de atenderte.</p>                            
+                <div class="container">
+                    <form action="" class="form">
+                    <input type="text" placeholder="Name" class="form__input" id="name" />
+                    <label for="name" class="form__label">Name</label>
+                    <input
+                    type="email"
+                    placeholder="Email"
+                    class="form__input"
+                    id="email"
+                    />
+                    <label for="email" class="form__label">Email</label>
 
-                <input
-                type="text"
-                placeholder="Subject"
-                class="form__input"
-                id="subject"
-                />
-                <label for="subject" class="form__label">Subject</label>
+                    <input
+                    type="text"
+                    placeholder="Subject"
+                    class="form__input"
+                    id="subject"
+                    />
+                    <label for="subject" class="form__label">Subject</label>
                 </form>
+                <div class="mail__message">
+                <h3>¿Prefieres correo electrónico?</h3>
+                <p>También puede comunicarse con nosotros en: </p>
+                <a href="mailto:tokosway@gmail.com">tokosway@gmail.com</a>
+                </div> 
+                </div>                               
             </section>
+            
+            
         </body>
     </main>
 </Layout>
@@ -59,9 +67,9 @@ p {
 
 .form {
   
-  width: 100%; /* Ajusta el ancho según tus necesidades */
-  max-width: 400px; /* Establece un ancho máximo */
-  margin: 25px 25px 25px 25px ; /* Centra el formulario */
+  width: 100%;
+  max-width: 400px;
+  margin: 25px 25px 25px 25px ; 
   padding: 80px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -80,6 +88,26 @@ p {
   margin-bottom: 5px;
   font-weight: bold;
 }
+
+.container {
+    display: flex;
+   
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    
+}
+
+.mail__message {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    
+   
+    
+}
+
 
 
 </style>
