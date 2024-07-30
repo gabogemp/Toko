@@ -1,0 +1,255 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <main>
+    <head>
+      <title>Acerca de nosotros</title>
+    </head>
+    <body>
+      <div>
+        <details open>
+          <summary> Acerca de Nosotros </summary>
+          <div>
+            <p>
+              En el mundo actual, la publicidad y el marketing digital son
+              esenciales para el éxito empresarial. Nos especializamos en
+              construir estrategias efectivas en equipo, aprovechando las
+              habilidades individuales para maximizar el impacto y alcanzar los
+              objetivos de negocio.
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary> Importancia del Trabajo en Equipo </summary>
+          <div>
+            <p>
+              La colaboración es fundamental en publicidad y marketing digital.
+              Al combinar diversas perspectivas y habilidades, desarrollamos
+              soluciones más creativas y efectivas para enfrentar los desafíos
+              del mercado.
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary> Definición de Objetivos </summary>
+          <div>
+            <p>
+              Antes de implementar cualquier estrategia, definimos objetivos
+              claros y específicos. Estos objetivos deben ser medibles,
+              alcanzables, relevantes y temporales (SMART) para guiar nuestras
+              acciones y evaluar el éxito de nuestras iniciativas.
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary> Análisis de Mercado </summary>
+          <div>
+            <p>
+              Realizamos un análisis de mercado exhaustivo para entender el
+              entorno en el que operamos. Identificamos la competencia, las
+              tendencias del consumidor y las oportunidades de crecimiento,
+              permitiéndonos tomar decisiones informadas y estratégicas.
+            </p> like.
+          </div>
+        </details>
+        <details>
+          <summary> Estrategias Digitales </summary>
+          <div>
+            <p>
+              Nuestras estrategias digitales son adaptativas y centradas en el
+              cliente. Utilizamos herramientas como SEO, SEM y redes sociales
+              para alcanzar a la audiencia adecuada, personalizando nuestras
+              tácticas para aumentar la conversión y la lealtad del cliente.
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary> Implementación de Campañas </summary>
+          <div>
+            <p>
+              Implementamos campañas de manera efectiva, asegurando que cada
+              elemento esté alineado con los objetivos y mensajes clave. La
+              coordinación entre los miembros del equipo es esencial para el
+              éxito de nuestras campañas.
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary> Medición y Análisis </summary>
+          <div>
+            <p>
+              <p>
+                Medimos y analizamos los resultados para evaluar el rendimiento
+                de nuestras campañas. Utilizamos herramientas de análisis para
+                identificar qué funciona y qué no, permitiendo realizar ajustes
+                y mejorar las futuras estrategias.
+              </p>
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary> Nuestra Filosofía </summary>
+          <div>
+            <p>
+              Como expertos en publicidad y marketing digital, construimos
+              estrategias efectivas en equipo, basándonos en la colaboración, la
+              planificación estratégica y la evaluación continua para lograr el
+              éxito en un entorno digital en constante cambio.
+            </p>
+          </div>
+        </details>
+      </div>
+    </body>
+  </main>
+</Layout>
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+  *,
+  *:after,
+  *:before {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Inter", sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+    font-size: 1.25rem;
+  }
+
+  *:focus {
+    outline: none;
+  }
+
+  body > div {
+    width: 90%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+  }
+
+  details div {
+    border-left: 2px solid #333;
+    border-right: 2px solid #333;
+    border-bottom: 2px solid #333;
+    padding: 1.5em;
+  }
+
+  details div > * + * {
+    margin-top: 1.5em;
+  }
+
+  details + details {
+    margin-top: 0.5rem;
+  }
+
+  summary {
+    list-style: none;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  summary {
+    border: 2px solid #333;
+    padding: 0.75em 1em;
+    cursor: pointer;
+    position: relative;
+    padding-left: calc(1.75rem + 0.75rem + 0.75rem);
+  }
+
+  summary:before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0.75rem;
+    content: "↓";
+    width: 1.75rem;
+    height: 1.75rem;
+    background-color: #333;
+    color: #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  details[open] summary {
+    background-color: #eee;
+  }
+
+  details[open] summary:before {
+    content: "↑";
+  }
+
+  summary:hover {
+    background-color: #eee;
+  }
+
+  a {
+    color: inherit;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 1px 0 0;
+  }
+
+  a:hover {
+    box-shadow: 0 3px 0 0;
+  }
+
+  code {
+    font-family: monospace;
+    font-weight: 600;
+  }
+</style>
+
+<!-- 
+<Layout title="Publicity">
+	
+		<main>
+            <h1>Acerca de Nosotros</h1>
+<p>En el mundo actual, la publicidad y el marketing digital son esenciales para el éxito empresarial. Nos especializamos en construir estrategias efectivas en equipo, aprovechando las habilidades individuales para maximizar el impacto y alcanzar los objetivos de negocio.</p>
+
+<h2>Importancia del Trabajo en Equipo</h2>
+<p>La colaboración es fundamental en publicidad y marketing digital. Al combinar diversas perspectivas y habilidades, desarrollamos soluciones más creativas y efectivas para enfrentar los desafíos del mercado.</p>
+
+<h2>Definición de Objetivos</h2>
+<p>Antes de implementar cualquier estrategia, definimos objetivos claros y específicos. Estos objetivos deben ser medibles, alcanzables, relevantes y temporales (SMART) para guiar nuestras acciones y evaluar el éxito de nuestras iniciativas.</p>
+
+<h2>Análisis de Mercado</h2>
+<p>Realizamos un análisis de mercado exhaustivo para entender el entorno en el que operamos. Identificamos la competencia, las tendencias del consumidor y las oportunidades de crecimiento, permitiéndonos tomar decisiones informadas y estratégicas.</p>
+
+<h2>Estrategias Digitales</h2>
+<p>Nuestras estrategias digitales son adaptativas y centradas en el cliente. Utilizamos herramientas como SEO, SEM y redes sociales para alcanzar a la audiencia adecuada, personalizando nuestras tácticas para aumentar la conversión y la lealtad del cliente.</p>
+
+<h1>Implementación de Campañas</h1>
+<p>Implementamos campañas de manera efectiva, asegurando que cada elemento esté alineado con los objetivos y mensajes clave. La coordinación entre los miembros del equipo es esencial para el éxito de nuestras campañas.</p>
+
+<h1>Medición y Análisis</h1>
+<p>Medimos y analizamos los resultados para evaluar el rendimiento de nuestras campañas. Utilizamos herramientas de análisis para identificar qué funciona y qué no, permitiendo realizar ajustes y mejorar las futuras estrategias.</p>
+
+
+
+
+<p>Como expertos en publicidad y marketing digital, construimos estrategias efectivas en equipo, basándonos en la colaboración, la planificación estratégica y la evaluación continua para lograr el éxito en un entorno digital en constante cambio.</p>
+		
+
+	</main>
+</Layout>
+
+<style>
+    main {
+        text-align: center;
+        padding: 30px 90px 20px 90px;
+        margin: 0 35px 0 35px;
+        border: 1px solid black;
+        
+    }
+</style> -->
