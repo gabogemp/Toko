@@ -1,14 +1,85 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 ---
-<Layout title="Publicity">
-	<main>
-		<body>
-            <h1>Contactanos</h1>
-		</body>
-	</main>
+
+<Layout title="Contáctanos">
+    <main>
+        <body>
+            <section class="hablanos">
+                <h1>Ponte en contacto!</h1>
+                <p>¿Tienes alguna pregunta, sugerencia o simplemente quieres decirnos lo que piensas? ¡Tu opinión es importante para nosotros! Escríbenos y estaremos encantados de atenderte.</p>
+            
+                <form action="" class="form">
+                <input type="text" placeholder="Name" class="form__input" id="name" />
+                <label for="name" class="form__label">Name</label>
+                <input
+                type="email"
+                placeholder="Email"
+                class="form__input"
+                id="email"
+                />
+                <label for="email" class="form__label">Email</label>
+
+                <input
+                type="text"
+                placeholder="Subject"
+                class="form__input"
+                id="subject"
+                />
+                <label for="subject" class="form__label">Subject</label>
+                </form>
+            </section>
+        </body>
+    </main>
 </Layout>
 
 <style>
-	
+
+.hablanos {
+    display: flex;   
+    justify-content: left;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid blue;
+    height: 90vh;
+    margin: 0 90px 0 90px;
+    padding: 0 90px 0 90px;
+}
+
+h1 {
+    font-size: 3rem ;
+    margin-left: 30px;
+}
+
+p {
+    margin-left: 30px;
+    text-align: center;
+}
+
+.form {
+  
+  width: 100%; /* Ajusta el ancho según tus necesidades */
+  max-width: 400px; /* Establece un ancho máximo */
+  margin: 25px 25px 25px 25px ; /* Centra el formulario */
+  padding: 80px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form__input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+
 </style>
