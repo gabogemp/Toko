@@ -3,10 +3,15 @@ import { Image } from 'astro:assets';
 ---
 <section>
     <div class="text">
-        <h1>Expertos en Publicidad y Marketing Digital</h1>
+        <!-- <h1>Expertos en Publicidad y Marketing Digital</h1> -->
+        <div class="wrapper">
+          <div class="typing-demo">
+            Expertos en Publicidad y Marketing Digital.
+          </div>
+      <!-- </div>
         <p>¿Estás listo para llevar tu negocio al siguiente nivel?</p>
       
-    </div>
+    </div> -->
     <div class="image">
         <Image	
         src="/france.png" alt="Eiffel Tower" width="300" height="500" loading="eager"/>
@@ -15,7 +20,37 @@ import { Image } from 'astro:assets';
 </section>
 
 <style>
+/* demo */
+.wrapper {
+    margin-top: 80px;
+  
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+}
 
+.typing-demo {
+  width: 43ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+/* fin demo */
 
     section {
 		

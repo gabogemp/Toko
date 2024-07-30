@@ -1,2 +1,46 @@
 ---
+import { Image } from 'astro:assets';
 ---
+<section>
+ 
+    <h1>Desarrollamos tu sitio web</h1>
+    <div class="container">
+        <div>
+            <Image src="/developer.jpg" alt="Eiffel Tower" width="300" height="300" loading="eager" class="image"/>
+        </div>
+        <div>
+            <Image src="/developer2.jpg" alt="Eiffel Tower" width="300" height="300" loading="eager" class="image"/>
+        </div>
+        <div>
+            <Image src="/developer3.jpg" alt="Eiffel Tower" width="300" height="300" loading="eager" class="image"/>
+        </div>
+    </div>
+    
+    
+</section>
+
+<style>
+
+
+
+    
+
+    .container{
+    height: 100vh;;
+    display: flex;    
+    justify-content: space-evenly;
+    align-items: center;
+    
+    flex-wrap: wrap;
+
+    }
+
+    .image{       
+        
+        margin: 0 auto;
+        max-width: 100%;
+        max-height: 100%;   
+        margin: 30px 0 30px 0;
+        border-radius: 5%;
+    }
+</style>
