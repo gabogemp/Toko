@@ -1,10 +1,11 @@
 ---
+import Card2 from './Card2.astro';
 import { Image } from 'astro:assets';
 ---
 <section>
  
     <h1>Desarrollamos tu sitio web</h1>
-    <div class="container">
+    <!-- <div class="container">
         <div>
             <Image src="/developer.jpg" alt="Eiffel Tower" width="300" height="300" loading="eager" class="image"/>
         </div>
@@ -14,14 +15,23 @@ import { Image } from 'astro:assets';
         <div>
             <Image src="/developer3.jpg" alt="Eiffel Tower" width="300" height="300" loading="eager" class="image"/>
         </div>
-    </div>
+    </div> -->
+    <Card2 />
     
     
 </section>
 
 <style>
 
+section {
+    height: 80svh;
+}
 
+h1 {
+    margin: 70px 0 90px 0;
+    text-align: center;  
+     
+}
 
     
 
