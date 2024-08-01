@@ -18,5 +18,5 @@ document.querySelector("form").addEventListener("submit", async (e) => {
 
     alert("Gracias por tu mensaje");
 
-    window.location.href = API_URL;
+    // window.location.href = API_URL;
 });
