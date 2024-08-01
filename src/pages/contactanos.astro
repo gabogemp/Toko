@@ -14,7 +14,8 @@ import Submitbutton from "../components/submitbutton.astro";
         estaremos encantados de atenderte.
         </p>
         <div class="container">
-        <form action="" class="form">                        
+
+         <!--<form action="" class="form">                        
             <label for="name" class="form__label">Name</label>
             <input
             type="text"
@@ -35,9 +36,78 @@ import Submitbutton from "../components/submitbutton.astro";
             placeholder="Subject"
             class="form__input"
             id="subject"
-            />   
+            />    
             <Submitbutton/>         
-        </form>
+        </form>-->
+
+
+        <div>
+          <form>
+              <div>
+                  <label>NOMBRE</label><input type="text" name="nombre" class="input_data" />
+              </div>
+              <div>
+                  <label>APELLIDO</label><input type="text" name="apellido" class="input_data" />
+              </div>
+              <div>
+                  <label>EMAIL</label><input type="email" name="email" class="input_data" />
+              </div>
+              <div>
+                  <label>EDAD</label><input type="number" name="edad" class="input_data" />
+              </div>
+              <div id="genero">
+                  <label>GENERO</label>
+                  <div>
+                      <input type="radio" name="genero" value="HOMBRE" class="input_data" />
+                      <span>hombre</span>
+                      <input type="radio" name="genero" value="MUJER" class="input_data" />
+                      <span>mujer</span>
+                      <input type="radio" name="genero" value="NO BINARIO" class="input_data" />
+                      <span>no binario</span>
+                  </div>
+              </div>
+              <div>
+                  <label for="os">SISTEMA OPERATIVO</label>
+                  <input id="os" list="sistema_operativo" name="sistema_operativo" id="os" class="input_data" />
+  
+                  <datalist id="sistema_operativo">
+                      <option value="Windows"></option>
+                      <option value="Linux"></option>
+                      <option value="MacOs"></option>
+                      <option value="RedHat"></option>
+                  </datalist>
+              </div>
+              <div>
+                  <label for="colors">COLOR DE STATUS</label>
+                  <input type="color" list="redColors" id="colors" name="color_status" class="input_data" />
+                  <datalist id="redColors">
+                      <option value="#800000"></option>
+                      <option value="#8B0000"></option>
+                      <option value="#A52A2A"></option>
+                      <option value="#DC143C"></option>
+                  </datalist>
+              </div>
+  
+              <div>
+                  <label>NUMERO DE TICKET</label><input type="number" name="ticket" class="input_data" />
+              </div>
+  
+              <div class="input-group">
+                  <input type="text" name="mensaje" id="mensaje" class="input-group__input" required />
+                  <label for="mensaje" class="input-group__label">MENSAJE</label>
+              </div>
+  
+              <button type="submit">ENVIAR TICKET</button>
+          </form>
+      </div>
+
+
+
+
+
+
+
+
         <div class="mail__message">
             <h3>¿Prefieres correo electrónico?</h3>
             <p>También puede comunicarse con nosotros en:</p>
@@ -47,6 +117,7 @@ import Submitbutton from "../components/submitbutton.astro";
     </section>
     </body>
 </main>
+<script>import "../scripts/formulario/index.js";</script>
 </Layout>
 
 <style>
